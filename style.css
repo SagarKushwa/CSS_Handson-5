@@ -1,0 +1,226 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    width:100%;
+    height: 100vh;
+    background-image: url(./shara\ desert.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 7%;
+    padding-right: 7%;
+    box-sizing: border-box;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar
+{
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo
+{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon
+{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    height: 75%;
+}
+
+.left-part
+{
+    flex-basis: 90%;
+}
+
+
+.left-part h1
+{
+    font-size: 110px;
+    color: white;
+}
+
+.text
+{
+    color: white;
+    line-height: 25px;
+    text-shadow: 0 0 1px white;
+}
+
+.button 
+{
+    width: 25%;
+    border: 2px white solid;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    padding: 7px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.right-part
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card
+{
+    width: 240px;
+    height: 250px;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 25px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    line-height: 30px;
+    transition: transform 0.2s;
+}
+
+.card p
+{
+    font-size: 10px;
+    text-shadow: 0 0 10px black;
+}
+
+.card h4
+{
+    text-shadow: 0 0 2px white;
+}
+
+.card1
+{
+   background-image: url(./pic-1.png); 
+}
+
+.card2
+{
+    background-image: url(./pic-2.png);
+}
+
+.card3
+{
+    background-image: url(./pic-3.png);
+}
+
+.card4
+{
+    background-image: url(./pic-4.png);
+}
+
+.card:hover
+{
+    transform: translateY(-10px);
+}
+
+@media screen and (min-width:500px) and (max-width:900px)
+{
+    .container
+    {
+        background-image: url(./shara\ desert.jpg);
+        height: 100%;
+        background-size: contain;
+    }
+
+    .header
+    {
+        flex-direction: column;
+    }
+
+    .right-part
+    {
+        flex-direction: column;
+    }
+
+    .card
+    {
+        width: 130%;
+        margin-left: -50px;
+    }
+
+    .left-part h1
+    {
+        font-size: 50px;
+    }
+
+    .logo
+    {
+        width: 70px;
+        margin-top: 30px;
+    }
+
+    nav ul li
+    {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:499px)
+{
+    .container
+    {
+        background-image: url(./shara\ desert.jpg);
+        height: 100%;
+        background-size: contain;
+    }
+
+    .header
+    {
+        flex-direction: column;
+    }
+
+    nav ul li
+    {
+        display: none;
+    }
+
+    .logo
+    {
+        width: 60px;
+        margin-top: 5%;
+    }
+
+    .left-part h1 
+    {
+        font-size: 50px;
+    }
+}
